@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th_Qustion</title>
+    <style>
+        .main {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            display: inline-block;
+
+        }
+
+        input[type="button"] {
+            background-color: #d36238;
+            padding: 10px;
+            border: 0px;
+            border: 6px solid transparent;
+            
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0px;
+            position: relative;
+            max-width: 150px;
+            z-index: 5;
+        }
+
+        li {
+            padding-bottom: 10px;
+        }
+
+        .drop {
+            display: none;
+            height: 150px;
+            overflow: scroll;
+            background-color: aliceblue;
+
+        }
+
+        .button:hover+.drop {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="button">
+            <input type="button" value="Hover To View Options">
+        </div>
+        <div class="drop">
+            <ul class="list">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+                <li>Option 6</li>
+                <li>Option 7</li>
+                <li>Option 8</li>
+                <li>Option 9</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
